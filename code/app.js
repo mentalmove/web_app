@@ -146,7 +146,8 @@ function App () {
     */
    window.io = new IO(this);
    window.settings = new Settings(this);
-   settings.language ="EN"; // Optional...
+   if ( !settings.language && location.href.indexOf("github") >= 0 )
+      settings.language ="EN";
    if ( !settings.profile ) {
       first_tab_index = -1;
       settings.callback("profile", function () {
