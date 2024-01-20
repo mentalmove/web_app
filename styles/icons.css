@@ -1,0 +1,84 @@
+.icon.dots::before {
+    content: "\2026";
+}
+.icon.gear::before {
+    content: "\2699";
+}
+.icon.menu::before {
+    content: "\2261";
+}
+.icon.close_x::before {
+    content: "\2715";
+}
+.icon.triangle::before {
+    content: "\25B5";
+}
+.icon.circle::before {
+    content: "\25EF";
+}
+.icon.square::before {
+    content: "\25A2";
+}
+.icon.danger_close_x {
+    opacity: 0.75;
+}
+.icon.danger_close_x::before {
+    content: "\2716";
+    transition: color 0.125s;
+}
+.icon.danger_close_x:hover {
+    color: red;
+    opacity: 1;
+}
+div.inactive .icon.danger_close_x:hover {
+    color: #C8C8C8;
+}
+.icon.entry_closed {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.25s;  
+}
+.icon.entry_closed::before {
+    content: "\2228";
+    font-weight: bold;
+    position: relative;
+    top: -0.2rem;
+    padding: 1rem;
+}
+.icon.entry_closed.inactive {
+    color: #B8B8B8;
+    cursor: default;
+}
+.icon.entry_closed.open, .entry.open .icon.entry_closed {
+    /* transform:perspective(500px) rotateY(75deg); */
+    transform: rotate(180deg);
+}
+.open .icon.entry_closed {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1080px) {
+    div.only-small {
+        display: block;
+    }
+    i.only-small {
+        display: inline;
+        font-style: normal;
+    }
+    .only-large {
+        display: none;
+    }
+}
+@media screen and (min-width: 1081px) {
+    .only-small {
+        display: none;
+    }
+    div.only-large {
+        display: block;
+    }
+    i.only-large {
+        display: inline;
+        font-style: normal;
+    }
+}

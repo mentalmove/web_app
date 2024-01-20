@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Application Like Web Page</title>
+
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/icons.css" media="none" onload="if(media!='all')media='all'">
+        <link rel="stylesheet" href="styles/content.css" media="none" onload="if(media!='all')media='all'">
+
+        <script type="text/javascript" src="code/global.js"></script>
+
+        <script type="text/javascript" src="code/io.js" defer></script>
+        <script type="text/javascript" src="code/settings.js" defer></script>
+        <script type="text/javascript" src="code/utilities/dictionary.js" defer></script>
+        <script type="text/javascript" src="code/translation.js" defer></script>
+        <script type="text/javascript" src="code/navigation.js" defer></script>
+        <script type="text/javascript" src="code/app.js" defer></script>
+        <script type="text/javascript" src="code/main.js" defer></script>
+        <script type="text/javascript" src="code/utilities/tag_collector.js" defer></script>
+
+        <script type="text/javascript" src="code/view/index.js"></script>
+        <script type="text/javascript" src="code/view/menuview.js"></script>
+
+        <script type="text/javascript" src="code/view/versatile_tabview.js"></script>
+        <script type="text/javascript" src="code/controllers/versatile_tab.js"></script>
+
+        <script type="text/javascript" src="code/view/tab3view.js" async></script>
+        <script type="text/javascript" src="code/controllers/tab3.js" async></script>
+        <script type="text/javascript" src="code/view/preferencesview.js" async></script>
+        <script type="text/javascript" src="code/controllers/preferences.js" async></script>
+
+        <script type="text/javascript" src="code/controllers/confirmation.js" async></script>
+        
+        <script type="text/javascript" src="code/utilities/single_joined_lists.js" async></script>
+
+    </head>
+    <body>
+
+        <div id="header">
+            <span page="tab1" translatable>
+                Hauptseite
+            </span>
+            <span page="tab2" translatable>
+                Unterseiten
+            </span>
+            <span page="tab3" translatable>
+                Spielereien
+            </span>
+            <span>
+                <span class="icon dots"></span>
+                <div class="settings"></div>
+            </span>
+        </div>
+
+        <div id="wrapper">
+            <div id="content"></div>
+
+            <div id="footer">
+                <span>
+                    Footer
+                </span>
+            </div>
+        </div>
+
+        <div id="confirmation"></div>
+
+        <div id="messenger" style="display: none">
+            <div></div>
+        </div>
+
+    </body>
+</html>

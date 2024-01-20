@@ -1,0 +1,130 @@
+<div class="main_content">
+    <div class="large_table_like">
+        <div class="h20 flexy_column">
+            <h2 translatable>
+                Persönliche Daten
+            </h2>
+        </div>
+        <div class="h20 flexy_column">
+            <label>
+                <span name="label_first_name" translatable>
+                    Vorname
+                </span>
+                <span class="description">
+                    <span translatable>
+                        Aus Datenschutzgründen wäre es ratsam,
+                        <br>
+                        nicht den eigenen Vornamen anzugeben
+                    </span>
+                </span>
+            </label>
+            <div class="input_wrapper">
+                <input type="text" name="first_name" disabled>
+            </div>
+        </div>
+        <div class="h20 flexy_column">
+            <label>
+                <span name="label_last_name" translatable>
+                    Nachname
+                </span>
+                <span class="description">
+                    <span translatable>
+                        Falschangaben erwünscht
+                    </span>
+                </span>
+            </label>
+            <div class="input_wrapper">
+                <input type="text" name="last_name" disabled>
+            </div>
+        </div>
+        <div class="h20 flexy_column">
+            <label translatable>
+                Schuhgröße
+            </label>
+            <div class="input_wrapper">
+                <select name="shoe_size" disabled>
+                    <option selected disabled></option>
+                </select>
+            </div>
+        </div>
+        <div class="h20 flexy_column right-aligned">
+            <div class="button inactive" name="save_button" translatable>
+                Speichern
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main_content hidden" name="extended">
+    <div class="large_table_like unlimited">
+        <div class="h20 flexy_column">
+            <h2 translatable>
+                Erweiterte Einstellungen
+            </h2>
+        </div>
+        <div class="h20 flexy_column">
+            <label>
+                <span name="label_last_name" translatable>
+                    Nervige Nachrichten
+                </span>
+            </label>
+            <div class="input_wrapper">
+                <div>
+                    <div class="flexy_row">
+                        <label class="switch">
+                            <input type="checkbox" name="messages_enabled">
+                            <span class="slider_dot"></span>
+                        </label>
+                        <span>
+                            <div class="flexy_column right-aligned">
+                                <div class="button" name="message_test">
+                                    TEST
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h20 flexy_column" name="template">
+            <label>
+                <span name="property"></span>
+                <span class="delete"></span>
+            </label>
+            <div class="input_wrapper">
+                <input type="text" name="value">
+            </div>
+        </div>
+        <span name="list"></span>
+
+        <span name="add_property_zone">
+            <div class="flexy_column">
+                <label>
+                    <span translatable>
+                        Eigenschaft
+                    </span>
+                    <span class="delete"></span>
+                </label>
+                <div class="input_wrapper">
+                    <input type="text" name="property">
+                </div>
+            </div>
+            <div class="flexy_column right-aligned">
+                <div class="button" name="add_button">
+                    &nbsp; + &nbsp;
+                </div>
+            </div>
+        </span>
+
+        <div class="h20 flexy_column centre-aligned">
+            <div class="button" name="add_property_button">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+
+        <div class="h20 flexy_column right-aligned">
+            <div class="button inactive" name="save_button" translatable>
+                Speichern
+            </div>
+        </div>
+    </div>
+</div>

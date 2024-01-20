@@ -1,0 +1,24 @@
+#header {
+    top: calc(100vh - 100px);
+    z-index: 2;
+}
+#header span:last-of-type {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+#header span:last-of-type .settings.active {
+    z-index: 1;
+    opacity: 1;
+    background-color: #F8F8F8;
+}
+
+#wrapper {
+    top: 0;
+    height: 100%;
+}
+
+#content {
+    position: relative;
+    min-height: calc(100vh - 100px);
+}
